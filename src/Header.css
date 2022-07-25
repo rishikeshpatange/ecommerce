@@ -1,127 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 .header{
-    width: 100%;
-    height: 60px;
     display: flex;
-    align-items: center;
-    background-color: #ffffff;
     position: sticky;
     top: 0;
+    justify-content: space-between;
     z-index: 100;
-    font-family: 'PT Sans Narrow', sans-serif;
-    margin-top: 20px;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+    background:rgb(255, 255, 255);
+}
+.header.active{
+    background:rgb(255, 255, 255);
+    /* backdrop-filter: blur(7px); */
 }
 .header a{
-    list-style: none;
     text-decoration: none;
 }
-.header__logo{
-    margin: 0 20px;
-    color: black;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2.063rem;
-    line-height: 50px;
+.logo{
+    max-width: 50px;
+    margin-top: 5px;
+    margin-left: 50px;
+    object-fit: contain;
 }
-.header__search{
+.header__nav{
     display: flex;
-    flex: 1;
+    margin-right: 60px;
     align-items: center;
-    justify-content: center;
-
 }
-.header_searchIn{
-    width: 200px;
-    height: 30px;
-    border: 1.5px solid #969696;
-    box-sizing: border-box;
-    border-radius: 8px;
-    
-}
-.header_searchIcon{
-    padding: 5px;
-    height: 32px !important;
-    color: rgb(0, 0, 0);
-}
-.header_nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-.header_nav a{
+.header__nav a{
     text-decoration: none;
-}
-.header__optionOne{
-    font-size: 19px;
-    font-weight: 800;
- 
-}
-.header__optiontwo{
-    font-size: 15px;
-    font-weight: 800;
-
 }
 .header__option{
     display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 30px;
-    color: black;
-}
-.header_optionBasket{
-    display: flex;
+    flex-direction:row;
     align-items: center;
-    color: rgb(0, 0, 0);
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    margin-top: 0px;
+    transition: 0.5s;
+    max-height: 60px;
 }
-.header-basketCount{
-    margin: 10px;
+
+.header__option h1{
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 2PX;
+    color: var(--text-primary);
 }
-/* hovers */
-.basket :hover{
-    color: rgb(88, 88, 88);
+.header__option h1:hover{
 }
-.header__logo:hover{
-       color: rgb(88, 88, 88);
-    }
-@media screen and (max-width: 800px){
-    .header__logo{
-        margin: 0 20px;
-        font-size: 1.363rem;
-    }
-    .header_searchIn{
-        width: 100px;
-        height: 30px;
-        
-    }
-    .header__optionOne{
-        font-size:11px;
-    }
-    .header__optiontwo{
-        font-size: 11px;
+.hambuger-menu{
+    display: none;
+}
+.hambuger-menu a{
+    color: var(--text-primary);
+}
+.btn{
+    font-size: 1.4rem;
+    margin-top: -7px;
     
+}
+
+/* media querie */
+@media screen and (max-width: 800px){
+    .hambuger-menu{
+        display: block;
+
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__option{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        transform-origin: bottom;
+        transition: 1s;
+    }
+    .header__navPhone{
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        height: 12rem;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        top: 45px;
+        z-index: 10;
+        transition: 1s;
+       
+      }
+      .logo{
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+      .hambuger-menu {
+          margin-right: 5px;
+          margin-top: 5px;
+      }
+    .header__option h1{
+        color:var(--text-primary);
     }
 
 }
 @media screen and (max-width: 400px){
-    .header__logo{
-        margin: 0 10px;
-    }
-    .header_searchIn{
-        width: 80px;
-        height: 30px;   
-    }
-    .header__option{
-        display: flex;
-        margin-left: 10px;
-        margin-right: 10px;
-        color: black;
-    }
-    .header_optionBasket{
-        align-items: center;
-        color: rgb(0, 0, 0);
-    }
-    .header-basketCount{
-        margin: 5px;
+    .logo{
+        max-height: 30px;
+        margin-top: 10px;
+        margin-left: 20px;
     }
 
 }

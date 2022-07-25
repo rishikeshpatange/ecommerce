@@ -1,67 +1,15 @@
 
-
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-
 .home{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     font-family: PT Sans Narrow;
 }
-.banner{
-    display: flex;
-    height: 80vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.left__banner__content h3{
-font-size: 1.4rem;
-}
-.left__banner__content h1{
-    font-size: 3.525rem;
-    font-weight: bolder;
-    margin-bottom: -5px;
-    margin-top: -10px;
-}
-.left__banner__content p{
-font-size: 1rem;
-color: #434343;
-width: 400px;
-}
 
-.banner__img{
-    display: flex;
-    width: 100%;
-    background-size: cover;
-    /* margin-left: -200px; */
-    z-index: -1;
-}
-.banner__box{
-    width: 60%;
-    height: 60px;
-    align-items: center;
-    margin-top: 23%;
-    background: #FFFFFF;
-    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.39);
-    border-radius: 7px;
-}
-.banner__box h1{
-    font-size:1.575rem;
-    margin-left: 20px;
-}
-.banner__box p{
-    font-size: 0.75rem;
-    color: black;
-    margin-left: 20px;
-}
 .home_row{
     display: flex;
     justify-content: center;
@@ -79,25 +27,6 @@ width: 400px;
         justify-content: center;
         align-items: center;
     }
-    .left__banner__content h1{
-        font-size:2.9rem;
-        margin-bottom: -5px;
-        margin-top: -20px;
-        width: 340px;
-    }
-    .banner__box h1{
-        font-size:1.4rem;
-    }
-    .banner__box p{
-        font-size: 0.8rem;
-      
-    }
-    .banner__box{
-        width: 60%;
-        height: 60px;
-        margin-top: 10%;
-   
-    }
     .home_row{
         flex-wrap: wrap;
        
@@ -105,34 +34,5 @@ width: 400px;
 
 }
 @media screen and (max-width: 400px){
-    .left__banner__content h1{
-        font-size:2.9rem;
-        margin-bottom: -5px;
-        margin-top: -20px;
-        width: 340px;
-    }
-    .left__banner__content p{
-        font-size: 1rem;
-        width: 340px;
-        }
-    .banner__box h1{
-        font-size:1.4rem;
-        width: 300px;
-    }
-    .banner__box p{
-        font-size: 0.8rem;
-        width: 300px;
-    }
-    .banner__box{
-        width: 200px;
-        height: 60px;
-        margin-top: 10%;
-   
-    }
-    .banner__img{
-        display: flex;
-        width: 350px;
-        height: 250px;
-    }
-
+  
 }
