@@ -17,7 +17,7 @@
 }
 .logo{
     max-width: 50px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 50px;
     object-fit: contain;
 }
@@ -33,16 +33,17 @@
     display: flex;
     flex-direction:row;
     align-items: center;
+    justify-content: center;
     margin-left: 1.875rem;
     margin-right: 1.875rem;
-    margin-top: 0px;
+    margin-top: 20px;
     transition: 0.5s;
     max-height: 60px;
 }
 
 .header__option h1{
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: 2PX;
     color: var(--text-primary);
 }

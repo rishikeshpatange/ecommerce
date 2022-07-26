@@ -40,13 +40,13 @@ function Header() {
             <div onClick={MenuBtn} className={
                 showMediaIcons ? "header__nav header__navPhone" : "header__nav"}>
 
-                <Link to='/about'  >
+                <Link to='/mens'  >
                     <div className="header__option">
                         <h1>Men</h1>
                     </div>
                 </Link>
 
-                <Link to='/contact' >
+                <Link to='/womens' >
                     <div className="header__option">
                         <h1>Women</h1>
                     </div>

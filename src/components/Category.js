@@ -1,5 +1,6 @@
 import React from 'react';
-import './Category.css'
+import './Category.css';
+import { Link } from 'react-router-dom';
 
 function Category() {
     return (
@@ -8,9 +9,11 @@ function Category() {
                 <h1>WHO ARE YOU SHOPPING FOR?</h1>
             </div>
             <div className='category_types'>
+            <Link to='/mens'>
                 <div className='category_container'>
                     <img src="/Images/men.png" alt="" />
                 </div>
+                </Link>
                 <div className='category_container'>
                     <img src="/Images/women.png" alt="" />
                 </div>
@@ -19,9 +22,11 @@ function Category() {
                 </div>
             </div>
             <div className='category_types_phone'>
-            <div className='category_container'>
-                    <img src="/Images/men_phone.png" alt="" />
-                </div>
+                <Link to='/mens'>
+                    <div className='category_container'>
+                        <img src="/Images/men_phone.png" alt="" />
+                    </div>
+                </Link>
                 <div className='category_container'>
                     <img src="/Images/women_phone.png" alt="" />
                 </div>
@@ -31,7 +36,7 @@ function Category() {
 
             </div>
         </div>
-        
+
     )
 }
 

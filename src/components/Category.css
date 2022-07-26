@@ -1,22 +1,22 @@
 .category{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .category_content{
     position: relative;
     display: flex;
-    justify-content: space-around;
-    right:32%;
+    justify-content: left;
+    margin-left: 113px;
 }
 .category_content h1{
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 .category_types{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .category_container{
     display: flex;
@@ -25,7 +25,7 @@
     padding: 30px;
 }
 .category_container img{
-    max-height: 280px;
+    max-height: 300px;
     background-size: cover;
 }
 .category_types_phone{
@@ -42,7 +42,6 @@
         position: relative;
         display: flex;
         justify-content: space-around;
-        right:17%;
     }
     .category_content h1{
         font-size: 2rem;
@@ -73,7 +72,6 @@
         position: relative;
         display: flex;
         justify-content: space-around;
-        right:23%;
     }
     .category_content h1{
         font-size: 1.5rem;
@@ -96,6 +94,7 @@
 @media screen and (max-width: 400px){
     .category{
         flex-direction: column;
+        margin-top: 50px;
     }
     .category_types{
         display: none;
@@ -103,12 +102,12 @@
     .category_content{
         position: relative;
         display: flex;
-        justify-content: space-around;
-        right:12%;
+        justify-content: center
     }
     .category_content h1{
-        font-size: 1.4rem;
-        font-weight: 400;
+        font-size: 1.2rem;
+        font-weight: 500;
+        max-width: 340px;
     }
     .category_types_phone{
         display: flex;
