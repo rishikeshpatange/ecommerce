@@ -8,8 +8,8 @@
 
 .home_row{
     display: flex;
-    width: 100%;
-    justify-content:space-between;
+    /* width: 100%; */
+    justify-content:center;
     align-items: center;
 }
 /* media querie */

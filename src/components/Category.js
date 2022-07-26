@@ -9,17 +9,21 @@ function Category() {
                 <h1>WHO ARE YOU SHOPPING FOR?</h1>
             </div>
             <div className='category_types'>
-            <Link to='/mens'>
-                <div className='category_container'>
-                    <img src="/Images/men.png" alt="" />
-                </div>
+                <Link to='/mens'>
+                    <div className='category_container'>
+                        <img src="/Images/men.png" alt="" />
+                    </div>
                 </Link>
+                <Link to='/womens'>
                 <div className='category_container'>
                     <img src="/Images/women.png" alt="" />
                 </div>
+                </Link>
+                <Link to='/shoes'>
                 <div className='category_container'>
                     <img src="/Images/shoes.png" alt="" />
                 </div>
+                </Link>
             </div>
             <div className='category_types_phone'>
                 <Link to='/mens'>
@@ -27,12 +31,16 @@ function Category() {
                         <img src="/Images/men_phone.png" alt="" />
                     </div>
                 </Link>
+                <Link to='/womens'>
                 <div className='category_container'>
                     <img src="/Images/women_phone.png" alt="" />
                 </div>
+                </Link>
+                <Link to='/shoes'>
                 <div className='category_container'>
                     <img src="/Images/shoes_phone.png" alt="" />
                 </div>
+                </Link>
 
             </div>
         </div>

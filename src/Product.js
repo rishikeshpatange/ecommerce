@@ -30,7 +30,7 @@ function Product({ id, title, image, price, rating }) {
             </p>
             
         </div>
-        <button onClick={addToBasket}>Add to Basket</button>
+        <button onClick={addToBasket}>ADD TO BAG</button>
     </div>;
 }
 

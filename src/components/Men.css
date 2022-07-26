@@ -16,7 +16,14 @@
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    align-items: centers;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+.men_products h1{
+    font-size: 2rem;
+    font-weight: 500;
     
 }
 
@@ -35,9 +42,13 @@
     .men_banner_img_phone {
         display: flex;
         max-width: 600px;
+        height: 180px;
         -o-object-fit: cover;
         object-fit: cover;
         display: flex;
+    }
+    .men_products {
+        margin-top: 60px;
     }
 
 }
@@ -49,9 +60,13 @@
     .men_banner_img_phone {
         display: flex;
         max-width: 360px;
+        height: 130px;
         -o-object-fit: cover;
         object-fit: cover;
         display: flex;
+    }
+    .men_products {
+        margin-top: 20px;
     }
 
 }

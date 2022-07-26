@@ -13,7 +13,9 @@ function Home() {
             <Category/>
 
             {/* product */}
-            {/* <div className="home_row">
+            <div className='men_products'>
+                <h1>NEW ARRIVALS</h1>
+            <div className="home_row">
 
                 <Product
                     id="12345434"
@@ -30,10 +32,7 @@ function Home() {
                     rating={5}
                     image="./Images/adv-long-sleeve.png"
                 />
-            </div>
-            <div className="home_row">
-
-                <Product
+                    <Product
                     id="1234564"
                     title="Zion
                         Men's Hoodie "
@@ -41,6 +40,10 @@ function Home() {
                     rating={5}
                     image="./Images/zion-hoodie.png"
                 />
+            </div>
+            <div className="home_row">
+
+            
                 <Product
                     id="12343774"
                     title="Kyrie Irving Nets Statement Edition 2020"
@@ -56,25 +59,15 @@ function Home() {
                     rating={5}
                     image="./Images/kd14-basketball.png"
                 />
-            </div>
-            <div className="home_row">
-
-                <Product
+                    <Product
                     id="12348934"
                     title="Women's French Terry Graphic Hoodie"
                     price={3995}
                     rating={5}
                     image="./Images/sportswear-french-terry.png"
                 />
-                <Product
-                    id="12345434"
-                    title="Nike Air Zoom Pegasus 38 Premium"
-                    price={9197}
-                    // rating={5}
-                    image="./Images/air-zoom-pegasus.png"
-                />
-
-            </div> */}
+            </div>
+            </div>
         </div>
 
     )

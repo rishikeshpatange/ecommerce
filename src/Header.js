@@ -51,10 +51,16 @@ function Header() {
                         <h1>Women</h1>
                     </div>
                 </Link>
+                <Link to='/shoes' >
+                    <div className="header__option">
+                        <h1>Shoes</h1>
+                    </div>
+                </Link>
                 <Link to='/Checkout' >
                     <div className="header__option">
+                        
                     <LocalMallIcon className='basket'/>
-                       <span className='header__optiontwo header-basketCount' >{basket?.length}</span>
+                  <p>{basket?.length}</p>
                     </div>
                 </Link>
             </div>
